@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //
-        Intent i=new Intent(MainActivity.this,CitationSearch.class);
+        Intent i=new Intent(MainActivity.this,AdvanceSearch.class);
         startActivity(i);
 
 

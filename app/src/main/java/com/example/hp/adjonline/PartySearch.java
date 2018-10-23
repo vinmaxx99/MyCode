@@ -54,14 +54,14 @@ public class PartySearch extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String s) {
-            //Intent i=new Intent(PartySearch.this,SomeRandomActivity.class);
-            //i.putExtra(PartySearch.PARTYSEARCH,s);
+            Intent i=new Intent(PartySearch.this,Viewer.class);
+            i.putExtra(PartySearch.PARTYSEARCH,s);
             progressDialog.dismiss();
            if(s.length()==2){
                 Toast.makeText(PartySearch.this,"No Result",Toast.LENGTH_SHORT).show();
             }
             else{
-               // startActivity(i);
+               startActivity(i);
 
            }
             Log.e("Partysearchresult",s);

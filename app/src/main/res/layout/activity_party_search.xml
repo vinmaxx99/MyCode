@@ -11,8 +11,7 @@
         android:id="@+id/partygetter"
         android:layout_margin="10dp"
         android:hint="Enter Party Name Here"
-        android:textColorHint="#FFFFFF"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/editetxt_background"
         android:padding="10dp"
         android:imeOptions="actionSearch"
 

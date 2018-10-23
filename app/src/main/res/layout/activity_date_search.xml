@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".DateSearch">
 <LinearLayout
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:layout_margin="10dp"
@@ -20,9 +20,6 @@
         android:layout_marginLeft="10dp"
         android:layout_weight="1"
         android:imeOptions="actionSearch"
-        android:textColor="#FFFFFF"
-        android:background="@color/colorPrimaryDark"
-        android:textColorHint="#FFFFFF"
         android:hint=" DD/MM/YY"
         android:gravity="center"
         />
@@ -31,7 +28,7 @@
         android:layout_weight="0.2"
         android:layout_height="match_parent"
         android:padding="5dp"
-        android:src="@drawable/whitecal"
+        android:src="@drawable/calender"
         android:id="@+id/calender"/>
 </LinearLayout>
 

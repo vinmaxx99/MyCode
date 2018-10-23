@@ -211,15 +211,15 @@ public class DateSearch extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-           // Intent i=new Intent(DateSearch.this,SomeRandomActivity.class);
-            //i.putExtra(DateSearch.DATESEARCH,s);
+            Intent i=new Intent(DateSearch.this,Viewer.class);
+            i.putExtra(DateSearch.DATESEARCH,s);
             progressDialog.dismiss();
 
             if(s.length()==2){
                 Toast.makeText(DateSearch.this,"No Result",Toast.LENGTH_SHORT).show();
             }
             else{
-                //startActivity(i);
+                startActivity(i);
             }
             Log.e("DateSearchResult",s);
 

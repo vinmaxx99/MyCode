@@ -37,7 +37,9 @@
         <activity android:name=".CitationSearch" />
         <activity android:name=".AdvanceSearch" />
         <activity android:name=".DateSearch" />
-        <activity android:name=".PartySearch"></activity>
+        <activity android:name=".PartySearch" />
+        <activity android:name=".Viewer" />
+        <activity android:name=".AdvanceSearchFilter"></activity>
     </application>
 
 </manifest>
