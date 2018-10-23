@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DateSearch">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:background="@drawable/editetxt_background"
+    android:id="@+id/layout_date">
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dategetter"
+        android:padding="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:imeOptions="actionSearch"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimaryDark"
+        android:textColorHint="#FFFFFF"
+        android:hint=" DD/MM/YY"
+        android:gravity="center"
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/whitecal"
+        android:id="@+id/calender"/>
+</LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/layout_date"
+        android:background="@color/colorPrimaryDark"
+        android:text="SEARCH"
+        android:textColor="#FFFFFF"
+        android:id="@+id/searchdatebutton"
+        />
+
+</RelativeLayout>

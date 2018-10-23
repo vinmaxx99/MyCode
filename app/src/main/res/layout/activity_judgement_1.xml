@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+   >
+    <!--tools:context="com.sourcey.adjonline1.CardInfo"-->
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/Feedtoolbar"
+        />
+
+    <ImageButton
+        android:id="@+id/shareButton"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        android:src="@drawable/ic_action_share"
+        android:layout_alignParentRight="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Feedtoolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_peti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="PETI"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_peti"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="DATE"
+                android:textColor="#CC1D1D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_date"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="JUDGE:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_judge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_centerHorizontal="true"
+                android:text="TextView"
+                android:padding="5dp"
+                android:textColor="#CC1D1D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_hnote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_judge"
+                android:padding="10dp"
+                android:text="Hnote"
+                android:textColor="#0b0a0a"
+                android:textSize="14sp"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_hnote"
+                android:text="See Full Judgment -->"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColor="#a10411"
+                android:autoLink="email"
+                android:id="@+id/seeFull"/>
+
+
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="vertical"
+
+                >
+                <WebView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/fullJudgmentfeed"
+                    android:visibility="gone"
+                    android:layout_below="@+id/tv_hnote">
+
+                </WebView>
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

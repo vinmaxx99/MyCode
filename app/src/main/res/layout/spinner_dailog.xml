@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/dialog_label"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:text="Select Page No."
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        />
+    <Spinner
+        android:id="@+id/dialog_spinner"
+        android:layout_below="@id/dialog_label"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_spinner">
+        <Button
+            android:id="@+id/dialogOK"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="2dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/dialog_spinner"
+            />
+        <Button
+            android:id="@+id/dialogCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/dialog_spinner"
+            android:layout_toRightOf="@id/dialogOK"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

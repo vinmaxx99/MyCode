@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.adjonline">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/adjapplogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/adjapplogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="sendotp.key"
+            android:value="@string/sendotp_key" />
+
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".judgement_activity_1" />
+        <activity android:name=".activity_full_judgement" />
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".MobileVerificationActivity" />
+        <activity android:name=".PrivacyPolicyActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".CitationSearch" />
+        <activity android:name=".AdvanceSearch" />
+        <activity android:name=".DateSearch" />
+        <activity android:name=".PartySearch"></activity>
+    </application>
+
+</manifest>

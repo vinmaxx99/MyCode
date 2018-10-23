@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="amaticboldColor">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">#CC1D1D</item>
+
+    </style>
+
+    <style name="amaticbold">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">23sp</item>
+
+
+    </style>
+</resources>

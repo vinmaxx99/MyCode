@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.adjonline.AboutUsActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/about"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.hp.adjonline.AboutUsActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="ADJ Online-Easily Accessible Legal Database"
+                android:textColor="#050505"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/aboutUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/title"
+                android:padding="10dp"
+                android:text="About Us:"
+                android:textColor="#414040"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/aboutUs"
+                android:padding="10dp"
+                android:text="ADJ Online offers a new way to find and read judgements on iPhone/iPad, Android, and/or any web browser.\n
+ The application is a one-stop solution for readers to catch up with the latest Judgments of Allahabad High Court and Supreme Court. ADJ Online is a cost-effective mobile alternative to traditional reading of judgments.\n
+ADJ online is brought to you by Malhotra Law House. Established in 1984, Malhotra Law House is one of the leading firms in the field of publishing and Selling of law books and Journals . Our publications includes Allahabad Daily Judgement, Education and Service Cases ,ADJ Yearly Digest, Education and Service Cases Digest, Supreme Court Service Rulings and The Verdict of Ram Janam Bhoomi- Babri Masjid Disputes (the most high profile case).\n
+Our Publishing house is equipped with all the latest facilities and latest equipments to make the work clean and error free. Our commitment to customer service and our passion for developing quality print and digital resources are the reasons for our success and at the heart of what we do every day. We are focused on anticipating the changing needs of students, instructors, and legal professionals.\n
+We currently offer Judgements of Allahabad and Lucknow High Court and our goal is to provide access to all Central and state  Judgements and statutes in  India.\n
+Because ADJ ONLINE is also web-based, you can access from any computer, at anytime."
+                android:layout_alignParentLeft="true" />
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</LinearLayout>
