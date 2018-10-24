@@ -1,0 +1,2 @@
+# MyCode
+Almost C.
