@@ -1,2 +1,4 @@
 # MyCode
-Almost C.
+Almost Competed Code.
+Full App Integration Done
+Full Services Enabled.
